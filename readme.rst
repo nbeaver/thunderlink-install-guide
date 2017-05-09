@@ -5,6 +5,7 @@
 #. Check if the protocol is already registered::
 
        $ gvfs-mime --query x-scheme-handler/thunderlink
+       No default applications for 'x-scheme-handler/thunderlink'
 
 #. Copy ``thunderbird-thunderlink-handler.desktop`` to the proper directory::
 
@@ -24,6 +25,14 @@
 #. Check if it was successfully registered::
 
       $ gvfs-mime --query x-scheme-handler/thunderlink
+      Default application for 'x-scheme-handler/thunderlink': thunderbird-thunderlink-handler.desktop
+      Registered applications:
+      	thunderbird-thunderlink-handler.desktop
+      Recommended applications:
+      	thunderbird-thunderlink-handler.desktop
+
+#. Try opening some::
+
       $ icedove -thunderlink thunderlink://messageid=950124.162336@example.com
       $ xdg-open thunderlink://messageid=950124.162336@example.com
 
