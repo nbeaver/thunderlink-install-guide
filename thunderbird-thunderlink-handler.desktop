@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Thunderlink
+Comment=Open Thunderlink URIs with Thunderbird
+GenericName=Mail Client
+Exec=thunderbird -thunderlink %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=Network;Email;News;GTK;
+MimeType=x-scheme-handler/thunderlink
+StartupNotify=true
+Keywords=Mail;Contact;Addressbook;News;

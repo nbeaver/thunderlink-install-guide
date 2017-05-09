@@ -1,15 +1,14 @@
-
 #. Install Thunderlink add-on:
 
    https://addons.mozilla.org/en-Us/thunderbird/addon/thunderlink/
 
-#. Check if it's already registered::
+#. Check if the protocol is already registered::
 
        $ gvfs-mime --query x-scheme-handler/thunderlink
 
-#. Copy the ``icedove-tl.desktop`` file to proper directory in home directory::
+#. Copy ``thunderbird-thunderlink-handler.desktop`` to the proper directory::
 
-       $ cp icedove-tl.desktop ~/.local/share/applications/
+       $ cp thunderbird-thunderlink-handler.desktop ~/.local/share/applications/
 
    Most important lines::
 
@@ -20,7 +19,7 @@
 
 #. Add this line::
 
-       x-scheme-handler/thunderlink=icedove-tl.desktop
+       x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
 
 #. Check if it was successfully registered::
 
