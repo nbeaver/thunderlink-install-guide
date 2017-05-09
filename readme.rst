@@ -39,3 +39,5 @@
 https://github.com/poohsen/thunderlink
 
 http://edoceo.com/howto/xfce-custom-uri-handler
+
+https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
