@@ -13,7 +13,7 @@
 
    Most important lines::
 
-       Exec=icedove -thunderlink %
+       Exec=icedove -thunderlink %u
        MimeType=x-scheme-handler/thunderlink
 
 #. Edit ``~/.local/share/applications/mimeapps.list``
