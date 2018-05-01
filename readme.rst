@@ -33,8 +33,8 @@
 
 #. Try opening some::
 
-      $ icedove -thunderlink thunderlink://messageid=950124.162336@example.com
-      $ xdg-open thunderlink://messageid=950124.162336@example.com
+       $ icedove -thunderlink thunderlink://messageid=950124.162336@example.com
+       $ xdg-open thunderlink://messageid=950124.162336@example.com
 
 https://github.com/poohsen/thunderlink
 
