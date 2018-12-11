@@ -36,6 +36,8 @@
        $ icedove -thunderlink thunderlink://messageid=950124.162336@example.com
        $ xdg-open thunderlink://messageid=950124.162336@example.com
 
+Sources:
+
 https://github.com/poohsen/thunderlink
 
 http://edoceo.com/howto/xfce-custom-uri-handler
