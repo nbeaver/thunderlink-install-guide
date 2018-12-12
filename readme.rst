@@ -22,6 +22,9 @@
 
        x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
 
+#. Just in case, edit ``~/.local/share/applications/defaults.list``
+   and add the same line.
+
 #. Check if it was successfully registered::
 
        $ gio mime x-scheme-handler/thunderlink
