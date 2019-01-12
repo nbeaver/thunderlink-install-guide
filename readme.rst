@@ -13,7 +13,7 @@
 
    Most important lines::
 
-       Exec=icedove -thunderlink %u
+       Exec=thunderbird -thunderlink %u
        MimeType=x-scheme-handler/thunderlink
 
 #. Edit ``~/.local/share/applications/mimeapps.list``
@@ -36,7 +36,7 @@
 
 #. Try opening some::
 
-       $ icedove -thunderlink thunderlink://messageid=950124.162336@example.com
+       $ thunderbird -thunderlink thunderlink://messageid=950124.162336@example.com
        $ xdg-open thunderlink://messageid=950124.162336@example.com
 
 Sources:
