@@ -28,6 +28,9 @@
    This file is officially deprecated,
    but some applications use it anyway.
 
+.. TODO: just use ``xdg-mime default x-scheme-handler/thunderlink thunderbird-thunderlink-handler.desktop`` instead?
+.. TODO: just use ``gio mime x-scheme-handler/thunderlink thunderbird-thunderlink-handler.desktop`` instead?
+
 #. Check if it was successfully registered::
 
        $ gio mime x-scheme-handler/thunderlink
