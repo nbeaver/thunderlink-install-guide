@@ -25,6 +25,9 @@
 #. Just in case, edit ``~/.local/share/applications/defaults.list``
    and add the same line.
 
+   This file is officially deprecated,
+   but some applications use it anyway.
+
 #. Check if it was successfully registered::
 
        $ gio mime x-scheme-handler/thunderlink
