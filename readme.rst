@@ -28,6 +28,8 @@
    This file is officially deprecated,
    but some applications use it anyway.
 
+.. TODO: find official source for deprecation. Maybe this: https://lists.freedesktop.org/archives/xdg/2014-February/013177.html
+
 .. TODO: just use ``xdg-mime default x-scheme-handler/thunderlink thunderbird-thunderlink-handler.desktop`` instead?
 .. TODO: just use ``gio mime x-scheme-handler/thunderlink thunderbird-thunderlink-handler.desktop`` instead?
 
