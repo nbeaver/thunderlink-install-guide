@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=mid: scheme handler
+Comment=Open mid: URIs with Thunderbird
+GenericName=Mail Client
+Exec=thunderbird -thunderlink %u
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=Network;Email;News;GTK;
+MimeType=x-scheme-handler/mid
+StartupNotify=true
+Keywords=Mail;Contact;Addressbook;News;
