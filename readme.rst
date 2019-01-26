@@ -7,6 +7,15 @@
        $ gio mime x-scheme-handler/thunderlink
        No default applications for “x-scheme-handler/thunderlink”
 
+   If you don't have ``gio``, use ``xdg-mime`` instead::
+
+       $ xdg-mime query default x-scheme-handler/thunderlink
+       $ echo $?
+       4
+
+   Blank output and a non-zero error code from ``xdg-mime``
+   mean it's not registered.
+
 #. Copy ``thunderbird-thunderlink-handler.desktop`` to the proper directory::
 
        $ cp thunderbird-thunderlink-handler.desktop ~/.local/share/applications/
@@ -41,6 +50,13 @@
        	thunderbird-thunderlink-handler.desktop
        Recommended applications:
        	thunderbird-thunderlink-handler.desktop
+
+   If you don't have ``gio``, use ``xdg-mime`` instead::
+
+       $ xdg-mime query default x-scheme-handler/thunderlink
+       thunderbird-thunderlink-handler.desktop
+       $ echo $?
+       0
 
 #. Try opening some::
 
