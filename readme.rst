@@ -25,25 +25,16 @@
        Exec=thunderbird -thunderlink %u
        MimeType=x-scheme-handler/thunderlink
 
-#. Edit ``~/.local/share/applications/mimeapps.list``
+#. Run some commands to register the ``x-scheme-handler/thunderlink`` mimetype
+   with the ``thunderbird-thunderlink-handler.desktop`` file.
 
-#. Add this line::
+   ::
 
-       x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
+       $ XDG_UTILS_DEBUG_LEVEL=2 xdg-mime default 'thunderbird-thunderlink-handler.desktop' 'x-scheme-handler/thunderlink'
+       $ gio mime x-scheme-handler/myscheme2 myscheme2-handler.desktop
+       Set myscheme2-handler.desktop as the default for x-scheme-handler/myscheme2
 
-.. TODO: should this go under the ``[Added Associations]`` section or the ``[Default Applications]`` section?
-
-#. Just in case, edit ``~/.local/share/applications/defaults.list``
-   and add the same line.
-
-   This file is officially deprecated,
-   but some applications use it anyway.
-
-.. TODO: find official source for deprecation. Maybe this: https://lists.freedesktop.org/archives/xdg/2014-February/013177.html
-.. TODO: should this go under ``[Default Applications]`` section since there is no other?
-
-.. TODO: just use ``xdg-mime default x-scheme-handler/thunderlink thunderbird-thunderlink-handler.desktop`` instead?
-.. TODO: just use ``gio mime x-scheme-handler/thunderlink thunderbird-thunderlink-handler.desktop`` instead?
+   .. TODO: is this necessary? update-desktop-database ~/.local/share/applications
 
 #. Check if it was successfully registered::
 
@@ -73,3 +64,20 @@ https://github.com/poohsen/thunderlink
 http://edoceo.com/howto/xfce-custom-uri-handler
 
 https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
+
+Trouble shooting:
+
+Some applications use deprecated locations of ``mimeapps.list``.
+For example, you can try editing these files:
+
+- ``~/.local/share/applications/mimeapps.list``
+- ``~/.local/share/applications/defaults.list``
+
+and add this line::
+
+       x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
+
+.. TODO: should this go under the ``[Added Associations]`` section or the ``[Default Applications]`` section?
+.. TODO: should this go under ``[Default Applications]`` section since there is no other?
+
+.. TODO: find official source for deprecation. Maybe this: https://lists.freedesktop.org/archives/xdg/2014-February/013177.html
