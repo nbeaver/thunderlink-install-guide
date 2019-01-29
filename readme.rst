@@ -52,10 +52,13 @@
        $ echo $?
        0
 
-#. Try opening some::
+#. Try opening one directly with Thunderbird::
 
-       $ thunderbird -thunderlink thunderlink://messageid=950124.162336@example.com
-       $ xdg-open thunderlink://messageid=950124.162336@example.com
+       $ thunderbird -thunderlink 'thunderlink://messageid=950124.162336@example.com'
+
+   and then with the wrapper script::
+
+       $ xdg-open 'thunderlink://messageid=950124.162336@example.com'
 
 Sources:
 
