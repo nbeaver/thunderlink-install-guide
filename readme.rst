@@ -11,7 +11,7 @@ Installing and configuring Thunderlink on Linux
    This will save it to the clipboard.
    It should look something like this::
 
-       thunderlink://messageid=123456.789012@example.com'
+       thunderlink://messageid=123456.789012@example.com
 
    Next, test the thunderlink URL directly from the command line like this::
 
@@ -79,13 +79,13 @@ Installing and configuring Thunderlink on Linux
        $ echo $?
        0
 
-#. Try opening one directly with Thunderbird::
+#. Try opening a thunderlink directly with Thunderbird again::
 
-       $ thunderbird -thunderlink 'thunderlink://messageid=950124.162336@example.com'
+       $ thunderbird -thunderlink 'thunderlink://messageid=123456.789012@example.com'
 
    and then with ``xdg-open`` to test the desktop file::
 
-       $ xdg-open 'thunderlink://messageid=950124.162336@example.com'
+       $ xdg-open 'thunderlink://messageid=123456.789012@example.com'
 
 Sources:
 
@@ -95,7 +95,7 @@ http://edoceo.com/howto/xfce-custom-uri-handler
 
 https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
 
-Trouble shooting:
+Troubleshooting:
 
 Some applications use deprecated locations of ``mimeapps.list``.
 For example, you can try editing these files:
