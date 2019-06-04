@@ -5,7 +5,22 @@ Installing and configuring Thunderlink on Linux
 
    https://addons.mozilla.org/en-Us/thunderbird/addon/thunderlink/
 
-#. Check if the protocol is already registered::
+#. Get an example Thunderlink and test it directly.
+
+   Right-click an email and choose "ThunderLink..." > "thunderlink".
+   This will save it to the clipboard.
+   It should look something like this::
+
+       thunderlink://messageid=123456.789012@example.com'
+
+   Next, test the thunderlink URL directly from the command line like this::
+
+       $ thunderbird -thunderlink 'thunderlink://messageid=123456.789012@example.com'
+
+   If this works, proceed to the next step
+   to start registering the ``thunderlink://`` URL scheme.
+
+#. Check if the ``thunderlink://`` protocol is already registered::
 
        $ gio mime x-scheme-handler/thunderlink
        No default applications for “x-scheme-handler/thunderlink”
