@@ -1,3 +1,6 @@
+Installing and configuring Thunderlink on Linux
+===============================================
+
 #. Install Thunderlink add-on:
 
    https://addons.mozilla.org/en-Us/thunderbird/addon/thunderlink/
