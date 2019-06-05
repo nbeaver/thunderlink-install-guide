@@ -34,7 +34,13 @@ Installing and configuring Thunderlink on Linux
    Blank output and a non-zero error code from ``xdg-mime``
    mean it's not registered.
 
-#. Copy the ``thunderbird-thunderlink-handler.desktop`` desktop file
+#. Install the desktop file.
+
+   Either via ``desktop-file-install``::
+
+       $ desktop-file-install thunderbird-thunderlink-handler.desktop
+
+   or manually copy the ``thunderbird-thunderlink-handler.desktop`` file
    to the proper directory,
    which should be ``~/.local/share/applications/``::
 
