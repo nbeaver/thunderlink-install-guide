@@ -105,15 +105,6 @@ Detailed instructions
 
        $ update-desktop-database ~/.local/share/applications
 
-Sources
--------
-
-https://github.com/poohsen/thunderlink
-
-http://edoceo.com/howto/xfce-custom-uri-handler
-
-https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
-
 Troubleshooting
 ---------------
 
@@ -128,3 +119,12 @@ and add this line::
        x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
 
 .. TODO: find official source for deprecation. Maybe this: https://lists.freedesktop.org/archives/xdg/2014-February/013177.html
+
+Sources
+-------
+
+https://github.com/poohsen/thunderlink
+
+http://edoceo.com/howto/xfce-custom-uri-handler
+
+https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
