@@ -14,3 +14,5 @@ if command gio 2> /dev/null
 then
     gio mime "${MIMETYPE}" "${DESKTOP_FILENAME}"
 fi
+# For applications that read mimeinfo.cache instead of mimeapps.list:
+update-desktop-database "${apps}"
