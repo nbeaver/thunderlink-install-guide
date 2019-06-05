@@ -118,7 +118,7 @@ Some applications use the old location for ``mimeapps.list``
 instead of ``~/.config/``.
 To fix this, edit this file with a text editor::
 
-    ~/.local/share/applications/mimeapps.list
+    $ edit ~/.local/share/applications/mimeapps.list
 
 and manually add this line::
 
@@ -134,7 +134,7 @@ There is also an `even older deprecated file`_ called ``defaults.list``
 that is still used by some applications.
 Handle this in the same way; edit this file with a text editor::
 
-    ~/.local/share/applications/defaults.list
+    $ edit ~/.local/share/applications/defaults.list
 
 and manually add this line::
 
