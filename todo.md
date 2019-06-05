@@ -1,0 +1,1 @@
+- [ ] Add another script to register the `mid:` URL scheme.
