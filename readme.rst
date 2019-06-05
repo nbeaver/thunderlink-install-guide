@@ -1,6 +1,9 @@
 Installing and configuring Thunderlink on Linux
 ===============================================
 
+Detailed instructions
+---------------------
+
 #. Install Thunderlink add-on:
 
    https://addons.mozilla.org/en-Us/thunderbird/addon/thunderlink/
@@ -70,8 +73,6 @@ Installing and configuring Thunderlink on Linux
    to the configuration file ``~/.config/mimeapps.list``
    under the ``[Added Associations]`` section.
 
-   .. TODO: is this necessary? update-desktop-database ~/.local/share/applications
-
 #. Check if it was successfully registered::
 
        $ gio mime x-scheme-handler/thunderlink
@@ -96,7 +97,16 @@ Installing and configuring Thunderlink on Linux
 
        $ xdg-open 'thunderlink://messageid=123456.789012@example.com'
 
-Sources:
+#. Finally, some applications read ``mimeinfo.cache``
+   instead of ``mimeapps.list``, so regenerate the cache
+   with ``update-desktop-database``.
+
+   ::
+
+       $ update-desktop-database ~/.local/share/applications
+
+Sources
+-------
 
 https://github.com/poohsen/thunderlink
 
@@ -104,7 +114,8 @@ http://edoceo.com/howto/xfce-custom-uri-handler
 
 https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
 
-Troubleshooting:
+Troubleshooting
+---------------
 
 Some applications use deprecated locations of ``mimeapps.list``.
 For example, you can try editing these files:
@@ -115,8 +126,5 @@ For example, you can try editing these files:
 and add this line::
 
        x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
-
-.. TODO: should this go under the ``[Added Associations]`` section or the ``[Default Applications]`` section?
-.. TODO: should this go under ``[Default Applications]`` section since there is no other?
 
 .. TODO: find official source for deprecation. Maybe this: https://lists.freedesktop.org/archives/xdg/2014-February/013177.html
