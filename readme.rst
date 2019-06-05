@@ -54,11 +54,14 @@ Installing and configuring Thunderlink on Linux
 #. Run some commands to register the ``x-scheme-handler/thunderlink`` mimetype
    to the ``thunderbird-thunderlink-handler.desktop`` file.
 
-   ::
+   Using ``gio``::
+
+       $ gio mime x-scheme-handler/thunderlink thunderbird-thunderlink-handler.desktop
+       Set thunderbird-thunderlink-handler.desktop as the default for x-scheme-handler/thunderlink
+
+   Using ``xdg-mime``::
 
        $ XDG_UTILS_DEBUG_LEVEL=2 xdg-mime default 'thunderbird-thunderlink-handler.desktop' 'x-scheme-handler/thunderlink'
-       $ gio mime x-scheme-handler/myscheme2 myscheme2-handler.desktop
-       Set myscheme2-handler.desktop as the default for x-scheme-handler/myscheme2
 
    On my machine, these commands add this line::
 
