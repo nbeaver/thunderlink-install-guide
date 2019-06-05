@@ -38,7 +38,7 @@ Installing and configuring Thunderlink on Linux
 
    Either via ``desktop-file-install``::
 
-       $ desktop-file-install thunderbird-thunderlink-handler.desktop
+       $ desktop-file-install --dir=$HOME/.local/share/applications/ thunderbird-thunderlink-handler.desktop
 
    or manually copy the ``thunderbird-thunderlink-handler.desktop`` file
    to the proper directory,
