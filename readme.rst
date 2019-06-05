@@ -142,8 +142,17 @@ under the "[Default Applications]" group.
 Sources
 -------
 
-https://github.com/mikehardy/thunderlink
+- http://edoceo.com/howto/xfce-custom-uri-handler
+- https://github.com/mikehardy/thunderlink
+- https://addons.thunderbird.net/en-US/thunderbird/addon/thunderlink/
 
-http://edoceo.com/howto/xfce-custom-uri-handler
+Related
+-------
 
-https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
+- https://askubuntu.com/questions/162268/adding-x-scheme-handler-without-a-popup-in-firefox
+- https://askubuntu.com/questions/514125/url-protocol-handlers-in-basic-ubuntu-desktop
+- https://fredrik.wendt.se/2014/11/08/uri-scheme-desktop-entry/
+- https://lists.freedesktop.org/archives/xdg/2010-October/011641.html
+- https://unix.stackexchange.com/questions/38650/adding-bindings-for-ed2k-links-with-xdg-open
+- https://unix.stackexchange.com/questions/497146/create-a-custom-url-protocol-handler
+- https://unix.stackexchange.com/questions/55214/how-to-override-the-gnome-3-ssh-handler/100736
