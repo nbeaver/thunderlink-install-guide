@@ -1,5 +1,11 @@
+.. -*- coding: utf-8 -*-
+
 Installing and configuring Thunderlink on Linux
 ===============================================
+
+:Author: Nathaniel Beaver
+:Date: $Date: 2019-06-05 (Wednesday, 5 June 2019) $
+:Copyright: This document has been placed in the public domain.
 
 Detailed instructions
 ---------------------
