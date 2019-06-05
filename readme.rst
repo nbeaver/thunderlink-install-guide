@@ -108,22 +108,41 @@ Detailed instructions
 Troubleshooting
 ---------------
 
-Some applications use deprecated locations of ``mimeapps.list``.
-For example, you can try editing these files:
+Some applications use the old location for ``mimeapps.list``
+instead of ``~/.config/``.
+To fix this, edit this file with a text editor::
 
-- ``~/.local/share/applications/mimeapps.list``
-- ``~/.local/share/applications/defaults.list``
+    ~/.local/share/applications/mimeapps.list
 
-and add this line::
+and manually add this line::
 
        x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
 
-.. TODO: find official source for deprecation. Maybe this: https://lists.freedesktop.org/archives/xdg/2014-February/013177.html
+under the "[Default Applications]" group.
+(This location is listed as "`for compatibility, deprecated`_"
+by the FreeDesktop standard.)
+
+.. _for compatibility, deprecated: https://standards.freedesktop.org/mime-apps-spec/1.0.1/ar01s02.html
+
+There is also an `even older deprecated file`_ called ``defaults.list``
+that is still used by some applications.
+Handle this in the same way; edit this file with a text editor::
+
+    ~/.local/share/applications/defaults.list
+
+and manually add this line::
+
+       x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
+
+under the "[Default Applications]" group.
+
+.. _even older deprecated file: https://lists.freedesktop.org/archives/xdg/2014-February/013177.html
+
 
 Sources
 -------
 
-https://github.com/poohsen/thunderlink
+https://github.com/mikehardy/thunderlink
 
 http://edoceo.com/howto/xfce-custom-uri-handler
 
