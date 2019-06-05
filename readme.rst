@@ -67,7 +67,7 @@ Installing and configuring Thunderlink on Linux
 
        x-scheme-handler/thunderlink=thunderbird-thunderlink-handler.desktop
 
-   to the configuration file ``~/.local/share/applications/mimeapps.list``
+   to the configuration file ``~/.config/mimeapps.list``
    under the ``[Added Associations]`` section.
 
    .. TODO: is this necessary? update-desktop-database ~/.local/share/applications
