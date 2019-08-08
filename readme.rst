@@ -22,6 +22,10 @@ Detailed instructions
 
        thunderlink://messageid=123456.789012@example.com
 
+   or this as a clickable URL:
+
+   `<thunderlink://messageid=123456.789012@example.com>`_
+
    Next, test the thunderlink URL directly from the command line like this::
 
        $ thunderbird -thunderlink 'thunderlink://messageid=123456.789012@example.com'
