@@ -9,6 +9,7 @@ then
     mkdir -p "${apps}"
 fi
 desktop-file-install --dir="${apps}" "${DESKTOP_FILEPATH}"
+chmod +x "${apps}/${DESKTOP_FILENAME}"
 xdg-mime default "${DESKTOP_FILENAME}" "${MIMETYPE}"
 if command gio 2> /dev/null
 then
