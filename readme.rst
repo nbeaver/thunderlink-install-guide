@@ -64,6 +64,16 @@ Detailed instructions
        Exec=thunderbird -thunderlink %u
        MimeType=x-scheme-handler/thunderlink
 
+#. Make the desktop file executable.
+
+   ::
+
+       $ chmod +x $HOME/.local/share/applications/http-url-handler.desktop
+
+   This is necessary `because of security precautions`_.
+
+   .. _because of security precations: https://askubuntu.com/questions/419610/permission-of-a-desktop-file
+
 #. Run some commands to register the ``x-scheme-handler/thunderlink`` mimetype
    to the ``thunderbird-thunderlink-handler.desktop`` file.
 
