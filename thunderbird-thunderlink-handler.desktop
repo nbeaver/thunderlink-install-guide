@@ -7,3 +7,4 @@ X-MultipleArgs=false
 Type=Application
 MimeType=x-scheme-handler/thunderlink
 StartupNotify=true
+NoDisplay=true

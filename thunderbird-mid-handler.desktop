@@ -7,3 +7,4 @@ X-MultipleArgs=false
 Type=Application
 MimeType=x-scheme-handler/mid
 StartupNotify=true
+NoDisplay=true
