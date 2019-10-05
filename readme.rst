@@ -72,7 +72,7 @@ Detailed instructions
 
    This is necessary `because of security precautions`_.
 
-   .. _because of security precations: https://askubuntu.com/questions/419610/permission-of-a-desktop-file
+   .. _because of security precautions: https://askubuntu.com/questions/419610/permission-of-a-desktop-file
 
 #. Run some commands to register the ``x-scheme-handler/thunderlink`` mimetype
    to the ``thunderbird-thunderlink-handler.desktop`` file.
