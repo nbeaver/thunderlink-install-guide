@@ -68,7 +68,7 @@ Detailed instructions
 
    ::
 
-       $ chmod +x $HOME/.local/share/applications/http-url-handler.desktop
+       $ chmod +x $HOME/.local/share/applications/thunderbird-thunderlink-handler.desktop
 
    This is necessary `because of security precautions`_.
 
