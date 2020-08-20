@@ -33,12 +33,20 @@ Detailed instructions
    If this works, proceed to the next step
    to start registering the ``thunderlink://`` URL scheme.
 
-#. Check if the ``thunderlink://`` protocol is already registered::
+#. Check if the ``thunderlink://`` protocol is already registered.
+
+   For GNOME 3, use ``gio``::
 
        $ gio mime x-scheme-handler/thunderlink
        No default applications for “x-scheme-handler/thunderlink”
 
-   If you don't have ``gio``, use ``xdg-mime`` instead::
+   For KDE Plasma 5, use ``ktraderclient5``::
+
+       $ ktraderclient5 --mimetype 'x-scheme-handler/thunderlink'
+       mimetype is : x-scheme-handler/thunderlink
+       got 0 offers.
+
+   For all FreeDesktop-conformant desktops, use``xdg-mime``::
 
        $ xdg-mime query default x-scheme-handler/thunderlink
        $ echo $?
